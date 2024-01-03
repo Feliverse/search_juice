@@ -65,6 +65,9 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  # rubocop is a Ruby static code analyzer and code formatter 
+  gem 'rubocop', '>= 1.0', '< 2.0'
 end
 
 group :test do
