@@ -1,5 +1,16 @@
 <!-- app/views/searches/process_search.html.erb -->
 
+<%= form_tag({ controller: "searches", action: "process_search" }, method: "get", class: "mt-4") do %>
+    <div class="row justify-content-center">
+        <div class="col-7"> <!-- col-6 indicates it will occupy 50% of the width on small screens -->
+            <div class="input-group mb-3">
+                <%= text_field_tag :query, nil, class: "form-control", placeholder: "Enter your search query..." %>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </div>
+<% end %>
+
 <div class="container mt-4">
   <% if @articles.any? %>
     <h1>Search Results for "<%= @query %>"</h1>
