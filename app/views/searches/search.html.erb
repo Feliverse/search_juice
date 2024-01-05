@@ -1,0 +1,19 @@
+<!-- app/views/searches/search.html.erb -->
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="text-center">
+        <h1>Perform a Search</h1>
+        <%= form_tag({ controller: "searches", action: "process_search" }, method: "get", class: "mt-4") do %>
+            <div class="row justify-content-center">
+                <div class="col-13"> <!-- col-6 indicates it will occupy 50% of the width on small screens -->
+                    <div class="input-group mb-3">
+                        <%= text_field_tag :query, nil, class: "form-control", placeholder: "Enter your search query..." %>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+
