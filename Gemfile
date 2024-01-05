@@ -78,3 +78,5 @@ end
 
 gem 'bootstrap'
 gem 'bootstrap_form'
+
+gem 'faker'
