@@ -7,8 +7,11 @@
                 <%= text_field_tag :query, nil, class: "form-control", placeholder: "Enter your search query..." %>
                 <button type="submit" class="btn btn-primary">Search</button>
             </div>
+            
         </div>
+        <%= link_to 'View Statistics', statistics_path, class: 'btn btn-secondary mt-3' %>
     </div>
+    
 <% end %>
 
 <div class="container mt-4">
